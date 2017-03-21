@@ -1,0 +1,7 @@
+---
+- name: Install Nginx
+  hosts: localhost
+  sudo: yes
+
+  roles:
+    - nginx

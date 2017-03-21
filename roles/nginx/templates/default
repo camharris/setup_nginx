@@ -1,0 +1,16 @@
+server {
+	listen 8000;
+	listen [::]:8000 ipv6only=on;
+
+	root /var/www/html;
+
+	index index.html index.htm;
+
+	server_name _;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+
+}
+
